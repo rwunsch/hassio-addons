@@ -41,7 +41,9 @@ RUN \
 
 RUN \
     mkdir  /tmp/qlcplus-build &&\
-    cd /tmp/qlcplus-build &&\
+    cd /tmp/qlcplus-build
+    
+RUN \
     curl -sSLf  \
     "https://github.com/mcallegari/qlcplus/archive/refs/tags/QLC+_${QLCPLUS_VERSION}.tar.gz"
     
