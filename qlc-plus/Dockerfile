@@ -5,9 +5,42 @@ FROM $BUILD_FROM
 # Execute during the build of the image
 ARG QLCPLUS_VERSION BUILD_ARCH
 
+# missing dependencies: debhelper devscripts
 RUN \
 	apk update &&\
-	apk add --no-cache g++ make git build-essential qtchooser qt5-qmake qtbase5-dev qtbase5-dev-tools qtscript5-dev qtmultimedia5-dev libqt5multimedia5-plugins qttools5-dev-tools fakeroot debhelper devscripts pkg-config libxml2-utils libglib2.0-dev libpulse-dev &&\
+	apk add --no-cache g++ make git dpkg build-base fakeroot pkg-config libxml2-utils
+
+RUN apk add --no-cache \
+		qt5-qtbase-dev \
+		qt5-qtdeclarative-dev \
+		qt5-qtwebsockets-dev \
+		qt5-qtwebchannel-dev \
+		qt5-qtwebengine-dev \
+		qt5-qtsvg-dev \
+		qt5-qtconnectivity-dev \
+		qt5-qtcharts-dev \
+		qt5-qtvirtualkeyboard-dev \
+		qt5-qtlocation-dev \
+		qt5-qttools-dev \
+		qt5-qtquickcontrols2-dev \
+		qt5-qtwayland-dev \
+		qt5-qtxmlpatterns-dev \
+		qt5-qtx11extras-dev \
+		qt5-qtserialport-dev \
+		qt5-qtsensors-dev \
+		qt5-qtmultimedia-dev \
+		qt5-qtspeech-dev \
+		qt5-qtremoteobjects-dev \
+		qt5-qtscript-dev \
+		qt5-qtimageformats \
+		qt5-qttranslations \
+		qt5-qtgraphicaleffects \
+		qt5-qmake \
+		glib-dev \
+		libpulse
+
+# missing dependencies: qtchooser libqt5multimedia5-plugins
+RUN \
 	apk add --no-cache libasound2-dev libusb-1.0-0-dev libftdi1-dev libudev-dev libmad0-dev libsndfile1-dev libfftw3-dev
 
 RUN \
