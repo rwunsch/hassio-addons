@@ -31,7 +31,7 @@ RUN apk add --no-cache \
 # missing dependencies: qtchooser libqt5multimedia5-plugins
 RUN \
 	apk add --no-cache \
-		alsa‑lib \
+		alsa-lib-dev \
 		libusb \
 		libftdi1 \
 		eudev \
