@@ -35,7 +35,7 @@ RUN apk add --no-cache \
 		qt5-qtimageformats \
 		qt5-qttranslations \
 		qt5-qtgraphicaleffects \
-		qt5-qmake \
+		qmake-qt5 \
 		glib-dev \
 		libpulse
 
