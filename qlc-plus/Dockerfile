@@ -30,7 +30,14 @@ RUN apk add --no-cache \
 
 # missing dependencies: qtchooser libqt5multimedia5-plugins
 RUN \
-	apk add --no-cache libasound2-dev libusb-1.0-0-dev libftdi1-dev libudev-dev libmad0-dev libsndfile1-dev libfftw3-dev
+	apk add --no-cache \
+		libasound2 \
+		libusb-1.0-0 \
+		libftdi1 \
+		libudev \
+		libmad0 \
+		libsndfile1 \
+		libfftw3
 
 RUN \
     curl -sSLf -o /usr/bin/qlcplus \
