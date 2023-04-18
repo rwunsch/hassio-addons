@@ -12,27 +12,27 @@ RUN \
 
 # missing dependencies: qmake-qt5
 RUN apk add --no-cache \
-		qt5-qtbase-dev \
-		qt5-qtdeclarative-dev \
-		qt5-qtwebsockets-dev \
-		qt5-qtwebchannel-dev \
-		qt5-qtwebengine-dev \
-		qt5-qtsvg-dev \
-		qt5-qtconnectivity-dev \
-		qt5-qtcharts-dev \
-		qt5-qtvirtualkeyboard-dev \
-		qt5-qtlocation-dev \
-		qt5-qttools-dev \
-		qt5-qtquickcontrols2-dev \
-		qt5-qtwayland-dev \
-		qt5-qtxmlpatterns-dev \
-		qt5-qtx11extras-dev \
-		qt5-qtserialport-dev \
+		qt5-qtbase \
+		qt5-qtdeclarative \
+		qt5-qtwebsockets \
+		qt5-qtwebchannel \
+		qt5-qtwebengine \
+		qt5-qtsvg \
+		qt5-qtconnectivity \
+		qt5-qtcharts \
+		qt5-qtvirtualkeyboard \
+		qt5-qtlocation \
+		qt5-qttools \
+		qt5-qtquickcontrols2 \
+		qt5-qtwayland \
+		qt5-qtxmlpatterns \
+		qt5-qtx11extras \
+		qt5-qtserialport \
 		qt5-qtsensors-dev \
 		qt5-qtmultimedia-dev \
-		qt5-qtspeech-dev \
-		qt5-qtremoteobjects-dev \
-		qt5-qtscript-dev \
+		qt5-qtspeechv \
+		qt5-qtremoteobjects \
+		qt5-qtscript \
 		qt5-qtimageformats \
 		qt5-qttranslations \
 		qt5-qtgraphicaleffects \
