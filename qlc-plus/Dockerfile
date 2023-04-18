@@ -12,7 +12,6 @@ RUN \
 
 # missing dependencies: qmake-qt5
 RUN apk add --no-cache \
-		qtcreator \
 		qt5-qtbase-dev \
 		qt5-qtdeclarative \
 		qt5-qtwebsockets \
@@ -55,7 +54,7 @@ RUN \
 
 RUN cd /tmp/qlcplus-build/qlcplus-QLC-_${QLCPLUS_VERSION} &&\
     ls
-RUN qmake-qt5 CONFIG+=qmlui
+RUN qmake-qt5 -project CONFIG+=qmlui
 RUN make
 RUN su -c "make install"
 
