@@ -19,11 +19,8 @@ RUN apk add --no-cache \
 		qt5-qtconnectivity \
 		qt5-qtcharts \
 		qt5-qttools \
-		qt5-qtquickcontrols2 \
 		qt5-qtx11extras \
 		qt5-qtserialport \
-		qt5-qtsensors \
-		qt5-qtmultimedia \
 		qt5-qtremoteobjects \
 		qt5-qtscript \
 		qt5-qtimageformats \
