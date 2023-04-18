@@ -10,6 +10,7 @@ RUN \
 	apk update &&\
 	apk add --no-cache g++ make git dpkg build-base fakeroot pkgconfig libxml2-utils
 
+# missing dependencies: qmake-qt5
 RUN apk add --no-cache \
 		qt5-qtbase-dev \
 		qt5-qtdeclarative-dev \
@@ -35,7 +36,6 @@ RUN apk add --no-cache \
 		qt5-qtimageformats \
 		qt5-qttranslations \
 		qt5-qtgraphicaleffects \
-		qmake-qt5 \
 		glib-dev \
 		libpulse
 
