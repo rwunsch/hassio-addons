@@ -30,7 +30,7 @@ RUN apk add --no-cache \
 		qt5-qtserialport \
 		qt5-qtsensors-dev \
 		qt5-qtmultimedia-dev \
-		qt5-qtspeechv \
+		qt5-qtspeech \
 		qt5-qtremoteobjects \
 		qt5-qtscript \
 		qt5-qtimageformats \
