@@ -52,7 +52,7 @@ RUN \
     tar -xf QLC+_${QLCPLUS_VERSION}.tar.gz &&\
     rm QLC+_${QLCPLUS_VERSION}.tar.gz
 
-RUN /usr/bin/qmake-qt5 .
+RUN /usr/bin/qmake
 RUN make
 RUN su -c "make install"
 
