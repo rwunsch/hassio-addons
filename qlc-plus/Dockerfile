@@ -40,11 +40,13 @@ RUN \
 		fftw
 
 RUN \
-    curl -sSLf -o /usr/bin/qlcplus \
+    mkdir  \tmp\qlcplus-build &&\
+    cd qlcplus-build &&\
+    curl -sSLf  \
     "https://github.com/mcallegari/qlcplus/archive/refs/tags/QLC+_${QLCPLUS_VERSION}.tar.gz"
     
 RUN \
-    cd /usr/bin/qlcplus &&\
+    cd \tmp\qlcplus-build &&\
     tar -xf QLC+_${QLCPLUS_VERSION}.tar.gz &&\
     rm QLC+_${QLCPLUS_VERSION}.tar.gz
 
