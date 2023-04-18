@@ -12,7 +12,7 @@ RUN \
 
 # missing dependencies: qmake-qt5
 RUN apk add --no-cache \
-		qt5-qtbase \
+		qt5-qtbase-dev \
 		qt5-qtdeclarative \
 		qt5-qtwebsockets \
 		qt5-qtsvg \
