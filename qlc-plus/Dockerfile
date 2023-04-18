@@ -8,7 +8,7 @@ ARG QLCPLUS_VERSION BUILD_ARCH
 # missing dependencies: debhelper devscripts
 RUN \
 	apk update &&\
-	apk add --no-cache g++ make git dpkg build-base fakeroot pkg-config libxml2-utils
+	apk add --no-cache g++ make git dpkg build-base fakeroot pkgconfig libxml2-utils
 
 RUN apk add --no-cache \
 		qt5-qtbase-dev \
