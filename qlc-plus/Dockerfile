@@ -15,27 +15,19 @@ RUN apk add --no-cache \
 		qt5-qtbase \
 		qt5-qtdeclarative \
 		qt5-qtwebsockets \
-		qt5-qtwebchannel \
-		qt5-qtwebengine \
 		qt5-qtsvg \
 		qt5-qtconnectivity \
 		qt5-qtcharts \
-		qt5-qtvirtualkeyboard \
-		qt5-qtlocation \
 		qt5-qttools \
 		qt5-qtquickcontrols2 \
-		qt5-qtwayland \
-		qt5-qtxmlpatterns \
 		qt5-qtx11extras \
 		qt5-qtserialport \
-		qt5-qtsensors-dev \
-		qt5-qtmultimedia-dev \
-		qt5-qtspeech \
+		qt5-qtsensors \
+		qt5-qtmultimedia \
 		qt5-qtremoteobjects \
 		qt5-qtscript \
 		qt5-qtimageformats \
 		qt5-qttranslations \
-		qt5-qtgraphicaleffects \
 		glib-dev \
 		libpulse
 
