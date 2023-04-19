@@ -54,7 +54,7 @@ RUN \
 
 RUN cd /tmp/qlcplus-build/qlcplus-QLC-_${QLCPLUS_VERSION} &&\
     ls
-RUN qmake-qt5 -project CONFIG+=qmlui
+RUN qmake-qt5 CONFIG+=qmlui
 RUN make 
 RUN su -c "make install"
 
