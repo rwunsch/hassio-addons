@@ -55,8 +55,9 @@ RUN \
 RUN cd /tmp/qlcplus-build/qlcplus-QLC-_${QLCPLUS_VERSION} &&\
     ls
 
-# RUN make distclean
-RUN qmake-qt5 -makefile CONFIG+=qmlui FORCECONFIG=release
+#RUN make distclean
+#RUN qmake-qt5 -makefile CONFIG+=qmlui FORCECONFIG=release
+RUN qmake-qt5 -makefile
 RUN make 
 RUN su -c "make install"
 
